@@ -107,6 +107,12 @@ console.log(price)
  *            const b = 5.14;  
  */
 
+/**
+ *   console.log()
+ *   console.warn()
+ *   console.error()
+ */
+
 //Assignment Operators: = , 
 let myName = "Md Abdullah"  //myName = camelCase styling in JS. 
 myName = "Abdul Haque"
