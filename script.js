@@ -176,3 +176,109 @@ let amazonPrice = 5000
 let flipkartPrice = 6000
 console.log("Prices of cost:"+ (amazonPrice < flipkartPrice))
 console.log("Price of cost:" + (amazonPrice > flipkartPrice))
+
+// && - AND
+let value1 = true
+let value2 = false
+let value3 = true
+let value4 = false
+console.log(value1 && value3) //true
+console.log(value1 && value2) //false
+console.log(value4 && value3) //false
+console.log(value2 && value4) //false
+
+let isloggedIn = true
+let cardDetails = false
+console.log(isloggedIn && cardDetails) //false
+
+let isloggedIn1 = true
+let cardDetails1 = true
+console.log(isloggedIn1 && cardDetails1) //true
+
+//  || - OR
+let values1 = true
+let values2 = false
+let values3 = true
+let values4 = false
+console.log(values1 || values3); //true
+console.log(values1 || values2); //true
+console.log(values4 || values3); //true
+console.log(values2 || values4); //false
+
+let gmailAccount = true
+let emailAccount = false
+console.log(gmailAccount || emailAccount) //true
+
+
+// Decision (Coditions) - if, else, else if, Switch Case 
+let age = 20
+if (age >= 18) {
+    console.log("You are Allowed for given vote")
+}
+else {
+    console.log("You are not Allowed for given vote")
+}
+
+let signal = "gren"
+if (signal == "red"){
+    console.log("red => Stop")
+}
+else if (signal == "yellow"){
+    console.log("yellow => Go Slow")
+}
+else if (signal == "green"){
+    console.log("green => Go Fast")
+}
+else {
+    console.log("Invalid")
+}
+
+//Switch Case
+let user = "Admi"
+switch (user) {
+    case "Admin":
+        console.log("He is Admin")
+        break
+
+    case "Student":
+        console.log("He is Student")
+        break
+
+    case "Mentors":
+        console.log("He is Mentor");  
+        break
+    
+    default:
+        console.log("I am default");
+}
+
+
+//loops - for loop, do While, while
+
+//for loop
+for (let i=0; i<5; i++) {
+    console.log(i);
+}
+
+//while
+let i = 0;
+while (i < 7) {
+    console.log(i);
+    i++;
+}
+
+//Do while
+let z = 0;
+do {
+    console.log("Hello World");
+    z++;
+} while(z < 4);
+
+//Ternary Operator / Ternary Condition
+// condition ? TRUE:FALSE
+isloggedIn = true;
+isloggedIn ? console.log("HOME PAGE"): console.log("LoginPage");
+
+isloggedIn = false;
+isloggedIn ? console.log("HOME PAGE"): console.log("LoginPage");
+
